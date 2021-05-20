@@ -10,12 +10,12 @@
 // ==/UserScript==
 
 (function () {
-    "use strict";
+    'use strict';
 
     setTimeout(() => {
-        document.querySelectorAll(".add-post").forEach(query => {
+        document.querySelectorAll('.add-post').forEach(query => {
             const section = query.parentElement;
             section.prepend(query);
         });
-    }, 1000)
+    }, 1000);
 })();
